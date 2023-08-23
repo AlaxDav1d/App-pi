@@ -9,7 +9,15 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "plugins":[
+        [
+          "expo-calendar",
+          {
+            "calendarPermission": "The app needs to access your calendar."
+          }
+        ]
+      ]
     },
     "assetBundlePatterns": [
       "**/*"
