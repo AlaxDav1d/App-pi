@@ -1,32 +1,31 @@
+import { NavigationContainer  } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Home from './components/Home';
-import { TouchableOpacity } from 'react-native';
+import  TabRouter  from './src/routes/topTab';
+import { StyleSheet } from 'react-native';
+
 
 export default function App() {
   return (
-    <View style={styles.container} id='tudo'>
-      <StatusBar></StatusBar>
-      <Home style={styles.text}/>
-      <TouchableOpacity>
-        <Text onPress={trocaCor}>
-          clique aqui
-        </Text>
-      </TouchableOpacity>
-    </View>
+    <NavigationContainer>    
+      <TabRouter/>
+    </NavigationContainer>
   );
 }
  const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
-        padding: 10,
-        marginTop:25,
-        color:'#fff',
-         justifyContent: 'flex-start',
+        justifyContent:'flex-end',        
+        backgroundColor: '#000',
+   },
+   button:{
+    alignItems:'center',
+    justifyContent:'center',
+    backgroundColor:'red',
+    height:100,
+    width:200,
+    margin:20,
+    borderRadius:10,
+    borderColor:'rgba(72,125,142,1)',
+    borderWidth:5
    },
    });
-   function trocaCor(clique){
-      const tudo = document.getElementById('tudo')
-      tudo.style.backgroundColor = 'black';
-   }
