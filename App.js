@@ -1,13 +1,15 @@
 import { NavigationContainer  } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import  TabRouter  from './src/routes/topTab';
+
 import { StyleSheet } from 'react-native';
+import TopRouter from './src/routes/topTab';
 
 
 export default function App() {
   return (
-    <NavigationContainer>    
-      <TabRouter/>
+    <NavigationContainer>
+      
+      <TopRouter/>
     </NavigationContainer>
   );
 }
