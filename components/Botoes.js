@@ -5,8 +5,8 @@ import { AntDesign } from '@expo/vector-icons';
 export default function Botoes(props){
      return(
           <TouchableOpacity style={styles.botao} >
-               <Text style={{fontSize:30}}>A</Text>
-               <Text>{props.name}</Text>
+               <Text style={{fontSize:30}}>{props.title}</Text>
+               <Text style={{fontSize:20}}>{props.name}</Text>
                <AntDesign name="right" size={45} color="blue" />
           </TouchableOpacity>
      )
@@ -20,5 +20,6 @@ const styles = StyleSheet.create({
           justifyContent:'space-around',
           alignItems:'center',
           borderRadius:15,    
+          margin:20,
      }
 })

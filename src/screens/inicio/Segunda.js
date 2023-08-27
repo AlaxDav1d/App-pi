@@ -2,6 +2,8 @@ import React from 'react';
 import { StatusBar, StyleSheet, Text, View } from 'react-native';
 
 import Botoes from '../../../components/Botoes';
+import { Link, NavigationContainer } from '@react-navigation/native';
+import StackRouter from '../../routes/stacks';
 
 export default function Segunda(){
     return (
@@ -12,10 +14,10 @@ export default function Segunda(){
                 </Text>
             </View>
             <View class='txtDivisao' style={styles.containerTxt}>
-                <Text>Divisões de Treino</Text>
-                <Botoes name ='Inferiores'/>
-                <Botoes  name='Superiores'/>
-                <Botoes name='Cardio'/>
+                <Text style={{fontSize:20,fontWeight:'600',marginBottom:20}}>Divisões de Treino</Text>
+                <Botoes name ='Inferiores' title='A'/>
+                <Botoes  name='Superiores' title='B'/>
+                <Botoes name='Cardio' title='C'/>
             </View>
             <StatusBar />
         </View>
