@@ -4,7 +4,7 @@ import { StatusBar, StyleSheet, Text, View } from 'react-native';
 import Botoes from '../../../components/Botoes';
 import { Link, NavigationContainer } from '@react-navigation/native';
 import StackRouter from '../../routes/stacks';
-
+//bah
 export default function Segunda(){
     return (
         <View style={styles.container}>
