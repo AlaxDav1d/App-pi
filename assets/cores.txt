@@ -1,0 +1,1 @@
+cor principal das telas: rgba(236,236,236,0.82)

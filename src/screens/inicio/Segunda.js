@@ -1,35 +1,41 @@
 import React from 'react';
-import { StatusBar, StyleSheet, View } from 'react-native';
-import { SliderBox } from 'react-native-image-slider-box';
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
 
-const App = () => {
-    const [images, setImages] = React.useState([
-        require('../../imgs/logo.png'),
-        require('../../imgs/imgTeste.png'),
-        require('../../imgs/usuario.png'),
-    ]);
+import Botoes from '../../../components/Botoes';
 
+export default function Segunda(){
     return (
         <View style={styles.container}>
-            <SliderBox 
-                images={images}
-                sliderBoxHeight={400}
-                dotColor="black"
-                inactiveDotColor="#90A4AE"  
-                onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
-                paginationBoxVerticalPadding={20}
-            />
+            <View style={styles.header}>
+                <Text style={{fontSize:50,color:'white'}}>
+                    EXERCÍCIOS
+                </Text>
+            </View>
+            <View class='txtDivisao' style={styles.containerTxt}>
+                <Text>Divisões de Treino</Text>
+                <Botoes name ='Inferiores'/>
+                <Botoes  name='Superiores'/>
+                <Botoes name='Cardio'/>
+            </View>
             <StatusBar />
         </View>
     );
-}
 
+}
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'white',
-        paddingTop: 10,
+        backgroundColor: 'rgba(236,236,236,0.82)',
         flex: 1,
     },
+    header:{
+        backgroundColor:'red',
+        height:150,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    containerTxt:{
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center',
+    }
 });
-
-export default App;

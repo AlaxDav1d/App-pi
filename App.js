@@ -3,13 +3,13 @@ import { StatusBar } from 'expo-status-bar';
 
 import { StyleSheet } from 'react-native';
 import TopRouter from './src/routes/topTab';
+import BottomRouter from './src/routes/bottomTab';
 
 
 export default function App() {
   return (
     <NavigationContainer>
-      
-      <TopRouter/>
+      <BottomRouter/>
     </NavigationContainer>
   );
 }
