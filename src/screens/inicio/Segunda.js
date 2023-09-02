@@ -17,7 +17,7 @@ export default function Segunda(){
                 <Text style={{fontSize:20,fontWeight:'600',marginBottom:20}}>Divisões de Treino</Text>
                 <Botoes name ='Inferiores' title='A'/>
                 <Botoes  name='Superiores' title='B'/>
-                <Botoes name='Cardio' title='C'/>
+                <Botoes name='Cardio' title='C'/>   
             </View>
             <StatusBar />
         </View>
