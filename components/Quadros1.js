@@ -6,6 +6,7 @@ export default function QuadroImg(props){
      return(
                <Image source={props.quadImg} style={styles.container}/>
      );
+//hello world
 }
 const styles = StyleSheet.create({
      container:{
