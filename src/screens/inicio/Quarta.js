@@ -5,10 +5,12 @@ const sla = require('../../imgs/logo.png')
 export default function Quarta(){
   return(
     <View>
-      <Text>
-        Alimentos
-      </Text>
-       <ScrollView horizontal>
+          <View style={styles.header}>
+               <Text style={{color:"white",fontSize:50,}}>
+                    ALIMENTOS
+               </Text>
+          </View>
+     <ScrollView horizontal>
          <View style={{flexDirection:'row',margin:10}}>
               <QuadroImg quadImg={sla}/>
               <QuadroImg quadImg={sla} title='hello'/>
@@ -45,6 +47,6 @@ const styles = StyleSheet.create({
       justifyContent:"space-around",
  },
  header:{
-  height:150,fontSize:50,color:'white', backgroundColor:'green'
+  height:150,backgroundColor:'green',alignItems:'center',justifyContent:'center',
  }
 })

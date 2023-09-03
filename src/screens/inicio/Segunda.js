@@ -1,10 +1,8 @@
 import React from 'react';
-import { StatusBar, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import Botoes from '../../../components/Botoes';
-import { Link, NavigationContainer } from '@react-navigation/native';
-import StackRouter from '../../routes/stacks';
-//bah
+
 export default function Segunda(){
     return (
         <View style={styles.container}>
@@ -14,12 +12,18 @@ export default function Segunda(){
                 </Text>
             </View>
             <View class='txtDivisao' style={styles.containerTxt}>
-                <Text style={{fontSize:20,fontWeight:'600',marginBottom:20}}>Divisões de Treino</Text>
+                <Text style={{fontSize:20,fontWeight:'600',margin:20}}>Divisões de Treino</Text>
+                <ScrollView showsVerticalScrollIndicator={false} style={{padding:20}} >
                 <Botoes name ='Inferiores' title='A'/>
                 <Botoes  name='Superiores' title='B'/>
                 <Botoes name='Cardio' title='C'/>   
+                <Botoes name='Resistência' title='D'/>   
+                <Botoes name='Força' title='E'/>   
+                <Botoes name='Força' title='E'/>   
+                <Botoes name='Força' title='E'/>
+                </ScrollView>   
             </View>
-            <StatusBar />
+
         </View>
     );
 
@@ -33,7 +37,7 @@ const styles = StyleSheet.create({
         backgroundColor:'red',
         height:150,
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
     },
     containerTxt:{
         flex:1,

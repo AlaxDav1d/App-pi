@@ -4,8 +4,11 @@ import Terceira from "../../screens/inicio/Terceira";
 import Inicio from "../../screens/inicio/Inicio";
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import Quarta from "../../screens/inicio/Quarta";
+import Telas from "../stackTab";
+import { Linking } from "react-native";
 
 const Bottom = createBottomTabNavigator();
+
 export default function BottomRouter(){
      return(
           <Bottom.Navigator screenOptions={{
@@ -32,7 +35,7 @@ export default function BottomRouter(){
                          )
                     }
                }}/>
-               <Bottom.Screen name="Exercicio" component={Segunda} options={{
+               <Bottom.Screen name="Segunda" component={Segunda} options={{
                        tabBarIcon:({color,size,focused}) => {
                          if(focused){
                               return(
