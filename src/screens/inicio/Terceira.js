@@ -19,16 +19,16 @@ export default function Terceira(){
                <ScrollView horizontal>
                     <View style={styles.tudo}>
                          <View style={{flexDirection:'row'}}>
-                              <Quadros quadImg={logo} title='Ansiedade' />
-                              <Quadros quadImg={logo} title='hello'/>
+                              <Quadros quadImg={logo} title='Ansiedade' estilo={styles.quadro}/>
+                              <Quadros quadImg={logo} title='hello' estilo={styles.quadro}/>
                          </View>
                          <View style={{flexDirection:'row',}}>
-                              <Quadros quadImg={logo} title='hello'/>
-                              <Quadros quadImg={logo} title='hello'/>
+                              <Quadros quadImg={logo} title='hello' estilo={styles.quadro}/>
+                              <Quadros quadImg={logo} title='hello' estilo={styles.quadro}/>
                          </View>
                          <View style={{flexDirection:'row',}}>
-                              <Quadros quadImg={logo} title='hello'/>
-                              <Quadros quadImg={logo} title='hello'/>
+                              <Quadros quadImg={logo} title='hello' estilo={styles.quadro}/>
+                              <Quadros quadImg={logo} title='hello' estilo={styles.quadro}/>
                          </View>
                          <View style={{flexDirection:'row',}}>
                               <Quadros quadImg={logo} title='hello'/>
@@ -74,6 +74,16 @@ const styles = StyleSheet.create({
           backgroundColor:'#888888',
           margin:40,
           padding:10,
+     },
+     quadro:{
+          margin:10,
+          backgroundColor:'#3EADEC',
+          height:200,
+          width:150,
+          padding:0,
+          display:"flex",
+          alignItems:'center',
+          justifyContent:'space-around',
      }
 
 })

@@ -11,7 +11,7 @@ export default function QuadroImg(props){
 const styles = StyleSheet.create({
      container:{
           margin:10,
-          backgroundColor:'red',
+          backgroundColor:'green',
           height:200,
           width:150,
           padding:10,

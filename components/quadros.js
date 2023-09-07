@@ -5,7 +5,7 @@ import { Image, Text, View } from "react-native";
 
 export default function Quadros(props){
      return(
-          <View style={styles.container}>
+          <View style={props.estilo}>
                <Image source={props.quadImg} style={styles.img}/>
                <Text style={{color:"black",fontSize:20,alignSelf:"center",textTransform:'capitalize',fontWeight:600,}}>
                     {props.title}
@@ -25,8 +25,8 @@ const styles = StyleSheet.create({
           alignItems:'center'
      },
      img:{
-          height:'50%',
-          width:'40%',
+          height:'20%',
+          width:'30%',
           margin:10,
      }
 })
